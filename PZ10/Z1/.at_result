@@ -1,0 +1,266 @@
+{
+    "buildhost_description": {
+        "id": "lab002c01",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.cpp: In member function ‘bool MatricaGraf<Tip>::postojiGrana(int, int) const’:\nmain.cpp:185:34: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n     return m[polazni][dolazni]!=-1;\n                                  ^",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "185",
+                "col": "34",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_7083/main.cpp:185:34: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]     return m[polazni][dolazni]!=-1;                                  ^",
+                "code": "return m[polazni][dolazni]!=-1;"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1838": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_1838.cpp: In function ‘int main()’:\nbs_test_1838.cpp:279:50: error: invalid new-expression of abstract class type ‘MatricaGraf<bool>’\n  UsmjereniGraf<bool> *g = new MatricaGraf<bool>(6);\n                                                  ^\nbs_test_1838.cpp:126:7: note:   because the following virtual functions are pure within ‘MatricaGraf<bool>’:\n class MatricaGraf : public UsmjereniGraf<Tip> {\n       ^~~~~~~~~~~\nbs_test_1838.cpp:35:21: note: \tTip UsmjereniGraf<Tip>::dajOznakuGrane(int, int) [with Tip = bool]\n         virtual Tip dajOznakuGrane (int polazni, int dolazni)=0;\n                     ^~~~~~~~~~~~~~\nbs_test_1838.cpp:290:18: error: ‘class UsmjereniGraf<bool>’ has no member named ‘postojiGrana’; did you mean ‘dodajGranu’?\n       cout << g->postojiGrana(i, j);\n                  ^~~~~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE_GLOBAL_ABOVE",
+                        "line": 5,
+                        "col": "50",
+                        "message": "invalid new-expression of abstract class type 'MatricaGraf<bool>'",
+                        "output": "/tmp/buildservice/bs_7083/bs_test_1838.cpp:279:50: error: invalid new-expression of abstract class type ‘MatricaGraf<bool>’  UsmjereniGraf<bool> *g = new MatricaGraf<bool>(6);                                                  ^",
+                        "code": "UsmjereniGraf<bool> *g = new MatricaGraf<bool>(6);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 9,
+                        "col": "18",
+                        "message": "'class UsmjereniGraf<bool>' has no member named 'postojiGrana'; did you mean 'dodajGranu'?",
+                        "output": "/tmp/buildservice/bs_7083/bs_test_1838.cpp:290:18: error: ‘class UsmjereniGraf<bool>’ has no member named ‘postojiGrana’; did you mean ‘dodajGranu’?       cout << g->postojiGrana(i, j);                  ^~~~~~~~~~~~",
+                        "code": "cout << g->postojiGrana(i, j);"
+                    }
+                ]
+            }
+        },
+        "2032": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_2032.cpp: In function ‘int main()’:\nbs_test_2032.cpp:279:51: error: invalid new-expression of abstract class type ‘MatricaGraf<bool>’\n   UsmjereniGraf<bool> *g = new MatricaGraf<bool>(6);\n                                                   ^\nbs_test_2032.cpp:126:7: note:   because the following virtual functions are pure within ‘MatricaGraf<bool>’:\n class MatricaGraf : public UsmjereniGraf<Tip> {\n       ^~~~~~~~~~~\nbs_test_2032.cpp:35:21: note: \tTip UsmjereniGraf<Tip>::dajOznakuGrane(int, int) [with Tip = bool]\n         virtual Tip dajOznakuGrane (int polazni, int dolazni)=0;\n                     ^~~~~~~~~~~~~~\nbs_test_2032.cpp:292:18: error: ‘class UsmjereniGraf<bool>’ has no member named ‘postojiGrana’; did you mean ‘dodajGranu’?\n       cout << g->postojiGrana(i, j);\n                  ^~~~~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE_GLOBAL_ABOVE",
+                        "line": 5,
+                        "col": "51",
+                        "message": "invalid new-expression of abstract class type 'MatricaGraf<bool>'",
+                        "output": "/tmp/buildservice/bs_7083/bs_test_2032.cpp:279:51: error: invalid new-expression of abstract class type ‘MatricaGraf<bool>’   UsmjereniGraf<bool> *g = new MatricaGraf<bool>(6);                                                   ^",
+                        "code": "UsmjereniGraf<bool> *g = new MatricaGraf<bool>(6);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 11,
+                        "col": "18",
+                        "message": "'class UsmjereniGraf<bool>' has no member named 'postojiGrana'; did you mean 'dodajGranu'?",
+                        "output": "/tmp/buildservice/bs_7083/bs_test_2032.cpp:292:18: error: ‘class UsmjereniGraf<bool>’ has no member named ‘postojiGrana’; did you mean ‘dodajGranu’?       cout << g->postojiGrana(i, j);                  ^~~~~~~~~~~~",
+                        "code": "cout << g->postojiGrana(i, j);"
+                    }
+                ]
+            }
+        },
+        "2033": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_2033.cpp: In function ‘int main()’:\nbs_test_2033.cpp:279:51: error: invalid new-expression of abstract class type ‘MatricaGraf<bool>’\n   UsmjereniGraf<bool> *g = new MatricaGraf<bool>(4);\n                                                   ^\nbs_test_2033.cpp:126:7: note:   because the following virtual functions are pure within ‘MatricaGraf<bool>’:\n class MatricaGraf : public UsmjereniGraf<Tip> {\n       ^~~~~~~~~~~\nbs_test_2033.cpp:35:21: note: \tTip UsmjereniGraf<Tip>::dajOznakuGrane(int, int) [with Tip = bool]\n         virtual Tip dajOznakuGrane (int polazni, int dolazni)=0;\n                     ^~~~~~~~~~~~~~\nbs_test_2033.cpp:287:14: error: ‘class UsmjereniGraf<bool>’ has no member named ‘postojiGrana’; did you mean ‘dodajGranu’?\n       if (g->postojiGrana(i,j))\n              ^~~~~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE_GLOBAL_ABOVE",
+                        "line": 5,
+                        "col": "51",
+                        "message": "invalid new-expression of abstract class type 'MatricaGraf<bool>'",
+                        "output": "/tmp/buildservice/bs_7083/bs_test_2033.cpp:279:51: error: invalid new-expression of abstract class type ‘MatricaGraf<bool>’   UsmjereniGraf<bool> *g = new MatricaGraf<bool>(4);                                                   ^",
+                        "code": "UsmjereniGraf<bool> *g = new MatricaGraf<bool>(4);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 6,
+                        "col": "14",
+                        "message": "'class UsmjereniGraf<bool>' has no member named 'postojiGrana'; did you mean 'dodajGranu'?",
+                        "output": "/tmp/buildservice/bs_7083/bs_test_2033.cpp:287:14: error: ‘class UsmjereniGraf<bool>’ has no member named ‘postojiGrana’; did you mean ‘dodajGranu’?       if (g->postojiGrana(i,j))              ^~~~~~~~~~~~",
+                        "code": "if (g->postojiGrana(i,j))"
+                    }
+                ]
+            }
+        },
+        "2034": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_2034.cpp: In function ‘int main()’:\nbs_test_2034.cpp:279:64: error: invalid new-expression of abstract class type ‘MatricaGraf<std::__cxx11::basic_string<char> >’\n  UsmjereniGraf<std::string> *g = new MatricaGraf<std::string>(4);\n                                                                ^\nbs_test_2034.cpp:126:7: note:   because the following virtual functions are pure within ‘MatricaGraf<std::__cxx11::basic_string<char> >’:\n class MatricaGraf : public UsmjereniGraf<Tip> {\n       ^~~~~~~~~~~\nbs_test_2034.cpp:35:21: note: \tTip UsmjereniGraf<Tip>::dajOznakuGrane(int, int) [with Tip = std::__cxx11::basic_string<char>]\n         virtual Tip dajOznakuGrane (int polazni, int dolazni)=0;\n                     ^~~~~~~~~~~~~~\nbs_test_2034.cpp:287:14: error: ‘class UsmjereniGraf<std::__cxx11::basic_string<char> >’ has no member named ‘postojiGrana’; did you mean ‘dodajGranu’?\n       if (g->postojiGrana(i,j))\n              ^~~~~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE_GLOBAL_ABOVE",
+                        "line": 5,
+                        "col": "64",
+                        "message": "invalid new-expression of abstract class type 'MatricaGraf<std::__cxx11::basic_string<char> >'",
+                        "output": "/tmp/buildservice/bs_7083/bs_test_2034.cpp:279:64: error: invalid new-expression of abstract class type ‘MatricaGraf<std::__cxx11::basic_string<char> >’  UsmjereniGraf<std::string> *g = new MatricaGraf<std::string>(4);                                                                ^",
+                        "code": "UsmjereniGraf<std::string> *g = new MatricaGraf<std::string>(4);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 6,
+                        "col": "14",
+                        "message": "'class UsmjereniGraf<std::__cxx11::basic_string<char> >' has no member named 'postojiGrana'; did you mean 'dodajGranu'?",
+                        "output": "/tmp/buildservice/bs_7083/bs_test_2034.cpp:287:14: error: ‘class UsmjereniGraf<std::__cxx11::basic_string<char> >’ has no member named ‘postojiGrana’; did you mean ‘dodajGranu’?       if (g->postojiGrana(i,j))              ^~~~~~~~~~~~",
+                        "code": "if (g->postojiGrana(i,j))"
+                    }
+                ]
+            }
+        },
+        "2035": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_2035.cpp: In function ‘int main()’:\nbs_test_2035.cpp:279:65: error: invalid new-expression of abstract class type ‘MatricaGraf<std::__cxx11::basic_string<char> >’\n   UsmjereniGraf<std::string> *g = new MatricaGraf<std::string>(4);\n                                                                 ^\nbs_test_2035.cpp:126:7: note:   because the following virtual functions are pure within ‘MatricaGraf<std::__cxx11::basic_string<char> >’:\n class MatricaGraf : public UsmjereniGraf<Tip> {\n       ^~~~~~~~~~~\nbs_test_2035.cpp:35:21: note: \tTip UsmjereniGraf<Tip>::dajOznakuGrane(int, int) [with Tip = std::__cxx11::basic_string<char>]\n         virtual Tip dajOznakuGrane (int polazni, int dolazni)=0;\n                     ^~~~~~~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE_GLOBAL_ABOVE",
+                        "line": 5,
+                        "col": "65",
+                        "message": "invalid new-expression of abstract class type 'MatricaGraf<std::__cxx11::basic_string<char> >'",
+                        "output": "/tmp/buildservice/bs_7083/bs_test_2035.cpp:279:65: error: invalid new-expression of abstract class type ‘MatricaGraf<std::__cxx11::basic_string<char> >’   UsmjereniGraf<std::string> *g = new MatricaGraf<std::string>(4);                                                                 ^",
+                        "code": "UsmjereniGraf<std::string> *g = new MatricaGraf<std::string>(4);"
+                    }
+                ]
+            }
+        },
+        "2036": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_2036.cpp: In function ‘int main()’:\nbs_test_2036.cpp:279:64: error: invalid new-expression of abstract class type ‘MatricaGraf<std::__cxx11::basic_string<char> >’\n  UsmjereniGraf<std::string> *g = new MatricaGraf<std::string>(4);\n                                                                ^\nbs_test_2036.cpp:126:7: note:   because the following virtual functions are pure within ‘MatricaGraf<std::__cxx11::basic_string<char> >’:\n class MatricaGraf : public UsmjereniGraf<Tip> {\n       ^~~~~~~~~~~\nbs_test_2036.cpp:35:21: note: \tTip UsmjereniGraf<Tip>::dajOznakuGrane(int, int) [with Tip = std::__cxx11::basic_string<char>]\n         virtual Tip dajOznakuGrane (int polazni, int dolazni)=0;\n                     ^~~~~~~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE_GLOBAL_ABOVE",
+                        "line": 5,
+                        "col": "64",
+                        "message": "invalid new-expression of abstract class type 'MatricaGraf<std::__cxx11::basic_string<char> >'",
+                        "output": "/tmp/buildservice/bs_7083/bs_test_2036.cpp:279:64: error: invalid new-expression of abstract class type ‘MatricaGraf<std::__cxx11::basic_string<char> >’  UsmjereniGraf<std::string> *g = new MatricaGraf<std::string>(4);                                                                ^",
+                        "code": "UsmjereniGraf<std::string> *g = new MatricaGraf<std::string>(4);"
+                    }
+                ]
+            }
+        },
+        "2037": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_2037.cpp: In function ‘int main()’:\nbs_test_2037.cpp:279:65: error: invalid new-expression of abstract class type ‘MatricaGraf<std::__cxx11::basic_string<char> >’\n   UsmjereniGraf<std::string> *g = new MatricaGraf<std::string>(4);\n                                                                 ^\nbs_test_2037.cpp:126:7: note:   because the following virtual functions are pure within ‘MatricaGraf<std::__cxx11::basic_string<char> >’:\n class MatricaGraf : public UsmjereniGraf<Tip> {\n       ^~~~~~~~~~~\nbs_test_2037.cpp:35:21: note: \tTip UsmjereniGraf<Tip>::dajOznakuGrane(int, int) [with Tip = std::__cxx11::basic_string<char>]\n         virtual Tip dajOznakuGrane (int polazni, int dolazni)=0;\n                     ^~~~~~~~~~~~~~\nbs_test_2037.cpp:288:14: error: ‘class UsmjereniGraf<std::__cxx11::basic_string<char> >’ has no member named ‘postojiGrana’; did you mean ‘dodajGranu’?\n       if (g->postojiGrana(i,j))\n              ^~~~~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE_GLOBAL_ABOVE",
+                        "line": 5,
+                        "col": "65",
+                        "message": "invalid new-expression of abstract class type 'MatricaGraf<std::__cxx11::basic_string<char> >'",
+                        "output": "/tmp/buildservice/bs_7083/bs_test_2037.cpp:279:65: error: invalid new-expression of abstract class type ‘MatricaGraf<std::__cxx11::basic_string<char> >’   UsmjereniGraf<std::string> *g = new MatricaGraf<std::string>(4);                                                                 ^",
+                        "code": "UsmjereniGraf<std::string> *g = new MatricaGraf<std::string>(4);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 7,
+                        "col": "14",
+                        "message": "'class UsmjereniGraf<std::__cxx11::basic_string<char> >' has no member named 'postojiGrana'; did you mean 'dodajGranu'?",
+                        "output": "/tmp/buildservice/bs_7083/bs_test_2037.cpp:288:14: error: ‘class UsmjereniGraf<std::__cxx11::basic_string<char> >’ has no member named ‘postojiGrana’; did you mean ‘dodajGranu’?       if (g->postojiGrana(i,j))              ^~~~~~~~~~~~",
+                        "code": "if (g->postojiGrana(i,j))"
+                    }
+                ]
+            }
+        },
+        "2038": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_2038.cpp: In function ‘int main()’:\nbs_test_2038.cpp:279:51: error: invalid new-expression of abstract class type ‘MatricaGraf<bool>’\n   UsmjereniGraf<bool> *g = new MatricaGraf<bool>(6);\n                                                   ^\nbs_test_2038.cpp:126:7: note:   because the following virtual functions are pure within ‘MatricaGraf<bool>’:\n class MatricaGraf : public UsmjereniGraf<Tip> {\n       ^~~~~~~~~~~\nbs_test_2038.cpp:35:21: note: \tTip UsmjereniGraf<Tip>::dajOznakuGrane(int, int) [with Tip = bool]\n         virtual Tip dajOznakuGrane (int polazni, int dolazni)=0;\n                     ^~~~~~~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE_GLOBAL_ABOVE",
+                        "line": 5,
+                        "col": "51",
+                        "message": "invalid new-expression of abstract class type 'MatricaGraf<bool>'",
+                        "output": "/tmp/buildservice/bs_7083/bs_test_2038.cpp:279:51: error: invalid new-expression of abstract class type ‘MatricaGraf<bool>’   UsmjereniGraf<bool> *g = new MatricaGraf<bool>(6);                                                   ^",
+                        "code": "UsmjereniGraf<bool> *g = new MatricaGraf<bool>(6);"
+                    }
+                ]
+            }
+        },
+        "2039": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_2039.cpp: In function ‘int main()’:\nbs_test_2039.cpp:279:20: error: cannot declare variable ‘g’ to be of abstract type ‘MatricaGraf<bool>’\n  MatricaGraf<bool> g(6);\n                    ^\nbs_test_2039.cpp:126:7: note:   because the following virtual functions are pure within ‘MatricaGraf<bool>’:\n class MatricaGraf : public UsmjereniGraf<Tip> {\n       ^~~~~~~~~~~\nbs_test_2039.cpp:35:21: note: \tTip UsmjereniGraf<Tip>::dajOznakuGrane(int, int) [with Tip = bool]\n         virtual Tip dajOznakuGrane (int polazni, int dolazni)=0;\n                     ^~~~~~~~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE_GLOBAL_ABOVE",
+                        "line": 5,
+                        "col": "20",
+                        "message": "cannot declare variable 'g' to be of abstract type 'MatricaGraf<bool>'",
+                        "output": "/tmp/buildservice/bs_7083/bs_test_2039.cpp:279:20: error: cannot declare variable ‘g’ to be of abstract type ‘MatricaGraf<bool>’  MatricaGraf<bool> g(6);                    ^",
+                        "code": "MatricaGraf<bool> g(6);"
+                    }
+                ]
+            }
+        }
+    },
+    "queue_items": 1,
+    "time": 1578777368
+}

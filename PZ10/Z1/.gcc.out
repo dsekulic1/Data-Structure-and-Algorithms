@@ -1,0 +1,4 @@
+/rhome/d/dsekulic1/workspace/ASP/PZ10/Z1/main.cpp: In member function ‘bool MatricaGraf<Tip>::postojiGrana(int, int) const’:
+/rhome/d/dsekulic1/workspace/ASP/PZ10/Z1/main.cpp:185:34: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     return m[polazni][dolazni]!=-1;
+                                  ^

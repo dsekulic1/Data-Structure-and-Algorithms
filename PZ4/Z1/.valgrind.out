@@ -1,0 +1,37 @@
+==8360== Memcheck, a memory error detector
+==8360== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8360== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8360== Command: /rhome/d/dsekulic1/workspace/ASP/PZ4/Z1/.runme
+==8360== Parent PID: 8353
+==8360== 
+==8360== Invalid read of size 8
+==8360==    at 0x10908C: Red<int>::skini() (main.cpp:62)
+==8360==    by 0x108C07: main (main.cpp:133)
+==8360==  Address 0x8 is not stack'd, malloc'd or (recently) free'd
+==8360== 
+==8360== 
+==8360== Process terminating with default action of signal 11 (SIGSEGV): dumping core
+==8360==  Access not within mapped region at address 0x8
+==8360==    at 0x10908C: Red<int>::skini() (main.cpp:62)
+==8360==    by 0x108C07: main (main.cpp:133)
+==8360==  If you believe this happened as a result of a stack
+==8360==  overflow in your program's main thread (unlikely but
+==8360==  possible), you can try to increase the size of the
+==8360==  main thread stack using the --main-stacksize= flag.
+==8360==  The main thread stack size used in this run was 8388608.
+==8360== 
+==8360== HEAP SUMMARY:
+==8360==     in use at exit: 16 bytes in 1 blocks
+==8360==   total heap usage: 19 allocs, 18 frees, 72,992 bytes allocated
+==8360== 
+==8360== LEAK SUMMARY:
+==8360==    definitely lost: 0 bytes in 0 blocks
+==8360==    indirectly lost: 0 bytes in 0 blocks
+==8360==      possibly lost: 0 bytes in 0 blocks
+==8360==    still reachable: 16 bytes in 1 blocks
+==8360==         suppressed: 0 bytes in 0 blocks
+==8360== Reachable blocks (those to which a pointer was found) are not shown.
+==8360== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==8360== 
+==8360== For counts of detected and suppressed errors, rerun with: -v
+==8360== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

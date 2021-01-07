@@ -1,0 +1,2 @@
+Vrijeme unosa 7500 elemenata za binarno stablo je 2041 ms, a za AVL stablo 1154 ms.
+Vrijeme brisanja 7500 elemenata za binarno stablo je 6 ms, a za AVL stablo 6 ms.
